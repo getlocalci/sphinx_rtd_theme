@@ -22,7 +22,7 @@ commands:
       - checkout
       - node/install:
           node-version: '14.18.1'
-      - run: npm ci
+      - node/install-packages
       - run: npm run build
       - run:
           name: Ensure built assets are up to date
