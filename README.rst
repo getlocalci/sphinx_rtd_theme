@@ -2,7 +2,7 @@
 Read the Docs Sphinx Theme
 **************************
 
-Forked from `readthedocs/sphinx_rtd_theme`_
+Forked from `readthedocs/sphinx_rtd_theme`_.
 
 An example of debugging CI/CD locally.
 
