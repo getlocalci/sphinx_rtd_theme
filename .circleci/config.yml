@@ -19,9 +19,9 @@ commands:
   run-build:
     description: "Ensure built assets are up to date"
     steps:
+      - checkout
       - node/install:
           node-version: '14.18.1'
-      - checkout
       - node/install-packages
       - run: npm run build
       - run:
