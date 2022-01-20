@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  node: circleci/node@3.0.0
+
 commands:
   run-tox:
     description: "Run tox"
@@ -16,6 +19,8 @@ commands:
   run-build:
     description: "Ensure built assets are up to date"
     steps:
+      - node/install:
+          node-version: '14.18.1'
       - checkout
       - run: npm ci
       - run: npm run build
